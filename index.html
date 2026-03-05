@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banjo-Kazooie Tribute: Jiggy Dash</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <h1>🪕 Banjo-Kazooie Tribute: Jiggy Dash</h1>
+      <p class="subtitle">
+        A tiny dad-friendly fan game: collect music notes, dodge grumpy baddies, and grab the Jiggy.
+      </p>
+
+      <section class="hud" aria-live="polite">
+        <div><strong>Notes:</strong> <span id="score">0</span></div>
+        <div><strong>Lives:</strong> <span id="lives">3</span></div>
+        <div><strong>Level:</strong> <span id="level">1</span></div>
+      </section>
+
+      <canvas id="game" width="800" height="450" aria-label="Jiggy Dash game area"></canvas>
+
+      <section class="controls">
+        <p><strong>Controls:</strong> Arrow keys or WASD to move. Collect 8 notes to spawn the Jiggy ✨.</p>
+        <button id="restart" type="button">Restart Game</button>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
